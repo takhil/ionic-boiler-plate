@@ -1,0 +1,31 @@
+// :host{
+//     ion-item {
+//         border:10px;
+//         border-block: 20px;
+//         border-block-color: black;
+//     }
+// }   
+
+// ion-item {
+// --background: rgba(215, 233, 245, 0.8);
+// }
+
+ion-item {
+    // --border-color:black;
+//     --background: rgba(215, 233, 245, 0.8);
+//     --border-top: 10px;
+//     --border-color: red;
+// border-radius: 20px !important;
+// padding-left: 10px;
+// padding-right: 10px;
+// padding-bottom: 5px;
+// padding-top: 5px;
+  border: 1px solid red;
+  border-radius: 30px;
+  height: 50px;
+    }
+
+    ion-label {
+    
+    }
+
