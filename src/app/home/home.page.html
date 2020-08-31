@@ -1,18 +1,38 @@
-<ion-header class="ion-no-border">
+<!-- <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>home</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content fullScreen="true" class="ion-padding">
   <form [formGroup]="form">
-    <ion-item class="ion-no-padding" lines="none">
-      <!-- <ion-label position="fixed">Username</ion-label> -->
+    <!-- <ion-item class="ion-no-padding" lines="none">
+      <ion-label position="floating">Username</ion-label>
       <ion-input formControlName="UserId" type="text" placeholer></ion-input>
-    </ion-item>
+    </ion-item> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="8" offset-md="2" size-lg="6" offset-lg="3">
+          <ion-item lines="full">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+
+          <ion-item lines="full">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" required></ion-input>
+          </ion-item>
+          <ion-button expand="block" shape="round" class="ion-padding">
+            click me!
+          </ion-button>
+
+
+
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
   </form>
 
-  <ion-button color="primary" expand="block" shape="round" class="ion-padding">
-    click me!
-  </ion-button>
+
 </ion-content>
