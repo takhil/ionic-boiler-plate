@@ -13,7 +13,9 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, FormsModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, FormsModule, IonicModule.forRoot({
+    // mode: 'ios' if we want the styles to be platform agnostic uncomment this
+  }), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
