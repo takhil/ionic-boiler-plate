@@ -10,6 +10,13 @@
 // --background: rgba(215, 233, 245, 0.8);
 // }
 
+.custom-logo{
+  display:block;
+  text-align:center;
+font-size: 5em;
+color:white;
+}
+
 // ion-item {
 //     // --border-color:black;
 // //     --background: rgba(215, 233, 245, 0.8);
@@ -53,26 +60,21 @@ position: relative;
 font-size: 5em;
 }
 
-.custom-logo{
-display:block;
-text-align:center;
-font-size: 5em;
-color:white;
-}
+
 
 .flexbox {
   display: flex;
   justify-content: space-between;
-  // height:100%;
-  // width:100%;
+  height:100%; // OPTIONAL 
+  width:100%;  // optional
 
 }
 
 .formFlexbox {
   display: block;
   align-items: center;
-  height:100%;
-  width:100%;
+  height:100%; 
+  width:100%; 
 
 }
 
