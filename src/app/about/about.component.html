@@ -1,31 +1,36 @@
 <ion-content class="ion-no-padding">
-  <div class="container-flex">
-    <div class="items-flex ion-padding">
-      <ion-item lines="full">
-        <ion-label position="floating">
-          Email
-        </ion-label>
-        <!-- <ion-icon name="globe"></ion-icon> -->
-        <ion-input type="text" required></ion-input>
-      </ion-item>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-md="8" offset-md="2" size-lg="8" offset-lg="2">
+        <div class="container-flex">
+          <div class="items-flex ion-padding">
+            <ion-item lines="full">
+              <ion-label position="floating">
+                Email
+              </ion-label>
+              <!-- <ion-icon name="globe"></ion-icon> -->
+              <ion-input type="text" required></ion-input>
+            </ion-item>
 
-      <ion-item lines="full">
-        <ion-label position="floating">Password</ion-label>
-        <ion-input type="password" required></ion-input>
-      </ion-item>
-      <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white">
-        click me!
-      </ion-button>
-      <div class="option-buttons">
-        <ion-button fill="clear" class="ion-no-padding">
-          Rememberme
-        </ion-button>
-        <ion-button fill="clear" class="ion-no-padding">
-          ForgotPassword
-        </ion-button>
-      </div>
-    </div>
-  </div>
-
+            <ion-item lines="full">
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" required></ion-input>
+            </ion-item>
+            <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white">
+              click me!
+            </ion-button>
+            <div class="option-buttons">
+              <ion-button fill="clear" class="ion-no-padding">
+                Rememberme
+              </ion-button>
+              <ion-button fill="clear" class="ion-no-padding">
+                ForgotPassword
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

@@ -1,6 +1,13 @@
-// ion-content {
-//  --background:rgb(255,230,220);
-// }
+ion-content {
+ --background:rgb(255,230,220);
+}
+
+ion-grid{
+height: 100%;
+ion-row{
+height: 100%;
+}
+}
 
 
 .container-flex {
@@ -12,6 +19,7 @@
 
 
 .items-flex {
+ align-items: stretch;
     flex-grow:1;
     display: flex;
     flex-direction: column;
@@ -21,4 +29,10 @@
 .option-buttons {
 display: flex;
  justify-content: space-between;
+}
+
+@media(prefers-color-scheme: dark) {
+ion-content {
+ --background:#000000;
+}
 }
