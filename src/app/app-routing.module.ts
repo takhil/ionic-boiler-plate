@@ -11,8 +11,12 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: '',
+    path: 'about', // about
     loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+  },
+  {
+    path: '',  // list-view
+    loadChildren: () => import('./list-view/list-view.module').then(m => m.ListViewPageModule)
   }
 ];
 @NgModule({
