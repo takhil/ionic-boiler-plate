@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormArray, FormControl, FormControlName, FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-list-view',
@@ -8,14 +10,22 @@ import { Component, OnInit } from '@angular/core';
 export class ListViewPage implements OnInit {
 
   items: Array<string>;
+  form: FormGroup;
 
   showPassword = false;
 
-  constructor() { }
+  constructor(
+    private formBuilder: FormBuilder
+  ) { }
 
   ngOnInit() {
-    this.items = ['Akhil', 'Bitty', 'Anusha'];
+    this.items = ['qlwknoq', 'Xasncali', 'cnoqieno', 'qlwknoq', 'Xasncali', 'cnoqieno'];
     console.log('itmes::', this.items);
+    this.form = this.formBuilder.group({
+      UserId: [null, Validators.required],
+      password: [null, Validators.required],
+      StaySignedIn: false
+    });
   }
 
 }
