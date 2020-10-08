@@ -7,7 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'home',
+    path: '', // home
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'home', // home
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
@@ -15,8 +19,20 @@ const routes: Routes = [
     loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   },
   {
-    path: '',  // list-view
+    path: 'list-view',  // list-view
     loadChildren: () => import('./list-view/list-view.module').then(m => m.ListViewPageModule)
+  },
+  {
+    path: 'side-menu', // side-menu
+    loadChildren: () => import('./side-menu/side-menu.module').then(m => m.SideMenuPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardPageModule)
+  },
+  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then(m => m.MapModule)
   }
 ];
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Platform } from '@ionic/angular';
 
 @Component({
@@ -8,9 +9,15 @@ import { Platform } from '@ionic/angular';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private platform: Platform) { }
+  constructor(
+    private platform: Platform,
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  nextpage() {
+    this.router.navigate(['/side-menu']);
+  }
 }

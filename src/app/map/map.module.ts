@@ -4,16 +4,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
-import { AboutComponent } from './about.component';
+import { MapComponent } from './map.component';
 const routes: Routes = [
   {
     path: '',
-    component: AboutComponent
+    component: MapComponent
   }
 ];
 
 @NgModule({
-  declarations: [AboutComponent],
+  declarations: [],
   imports: [
     CommonModule,
     FormsModule,
@@ -21,4 +21,4 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes)],
 })
-export class AboutModule { }
+export class MapModule { }

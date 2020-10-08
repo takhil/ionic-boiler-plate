@@ -1,3 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content class="ion-no-padding" fullScreen="true">
   <ion-grid fixed>
     <ion-row>
@@ -16,15 +25,17 @@
               <ion-label position="floating">Password</ion-label>
               <ion-input type="password" required></ion-input>
             </ion-item>
-            <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white">
+            <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white"
+              routerLink="/side-menu">
               click me!
             </ion-button>
             <div class="option-buttons">
-              <ion-button fill="clear" class="ion-no-padding">
+              <ion-button fill="clear" class="ion-no-padding" (click)="nextpage()" routerDirection="forward">
                 Rememberme
               </ion-button>
-              <ion-button fill="clear" class="ion-no-padding">
+              <ion-button fill="clear" class="ion-no-padding" routerLink="/list-view" routerDirection="forward">
                 ForgotPassword
+
               </ion-button>
             </div>
           </div>
@@ -32,5 +43,5 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
+  <a routerLink="/list-view">Go to list view</a>
 </ion-content>
