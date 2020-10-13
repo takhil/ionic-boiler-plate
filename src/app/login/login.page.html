@@ -1,12 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
+    <ion-title>Login</ion-title>
+
   </ion-toolbar>
 </ion-header>
-
 
 <ion-content fullscreen="true" class="ion-padding">
   <div class="formFlexbox">
@@ -18,11 +15,19 @@
     <ion-grid>
       <ion-row>
         <ion-col size="12" size-md="8" offset-md="2" size-lg="6" offset-lg="3">
+          <!-- <ion-item lines="none"> -->
+          <!-- <ion-text class="ion-text-align-center">
+              Sign In
+            </ion-text> -->
+          <!-- <ion-icon name="person-circle-outline" slot="start" class="custom-icon-font"></ion-icon>
+          </ion-item> -->
+
 
           <ion-item lines="full">
             <ion-label position="floating">
               Email
             </ion-label>
+            <!-- <ion-icon name="globe"></ion-icon> -->
             <ion-input type="text" required></ion-input>
           </ion-item>
 
@@ -30,29 +35,30 @@
             <ion-label position="floating">Password</ion-label>
             <ion-input type="password" required></ion-input>
           </ion-item>
-          <!-- <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white"
+          <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white"
             routerLink="/about">
             About Component
-          </ion-button> -->
+          </ion-button>
           <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white"
             routerLink="/map">
             Map Component
           </ion-button>
-          <!-- <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white"
-            routerLink="/dashboard">
-            Dashboard
-          </ion-button> -->
+          <ion-button expand="block" shape="outline" class="ion-no-padding" fill="clear" color="white"
+            routerLink="/tabs/home">
+            Tabs
+          </ion-button>
           <div class="flexbox">
-            <!-- <ion-button fill="clear" class="ion-no-padding" routerLink="/list-view" routerDirection="forward">
+            <ion-button fill="clear" class="ion-no-padding" routerLink="/list-view" routerDirection="forward">
               ListView page
             </ion-button>
-            <ion-button fill="clear" class="ion-no-padding" routerLink="/side-menu" routerDirection="forward">
+            <ion-button fill="clear" class="ion-no-padding" routerLink="/about" routerDirection="forward">
               Side Menu page
-            </ion-button> -->
+            </ion-button>
           </div>
+
         </ion-col>
       </ion-row>
-    </ion-grid>
 
+    </ion-grid>
   </div>
 </ion-content>

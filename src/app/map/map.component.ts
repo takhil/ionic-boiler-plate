@@ -12,7 +12,7 @@ export class MapComponent implements OnInit {
 
   ngOnInit() { }
 
-  backPage() {
-    this.router.navigate(['/home']);
-  }
+  // backPage() {
+  //   this.router.navigate(['/tabs']);
+  // }
 }

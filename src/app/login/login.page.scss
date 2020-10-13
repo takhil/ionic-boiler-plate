@@ -1,0 +1,59 @@
+.custom-logo {
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+
+ion-content {
+  --background: rgba(98, 81, 150, 0.8);
+}
+
+ion-item {
+  --background: transparent;
+
+  ion-label {
+    --color: white;
+  }
+
+  ion-input {
+    --color: white;
+  }
+}
+
+ion-button {
+  --color: white;
+  margin-top: 20px;
+}
+
+ion-icon {
+  color: white;
+}
+
+.custom-icon-font {
+  position: relative;
+  font-size: 5em;
+}
+
+
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; // OPTIONAL 
+  width: 100%; // optional
+
+}
+
+.formFlexbox {
+  display: block;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.custom-title {
+  display: flex;
+  justify-content: center;
+}

@@ -3,36 +3,46 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '', // login
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  },
+  {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  {
-    path: '', // home
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
-  {
-    path: 'home', // home
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
+  // {
+  //   path: 'home', // home
+  //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  // },
   {
     path: 'about', // about
     loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   },
+  // {
+  //   path: 'list-view',  // list-view
+  //   loadChildren: () => import('./list-view/list-view.module').then(m => m.ListViewPageModule)
+  // },
+
   {
-    path: 'list-view',  // list-view
-    loadChildren: () => import('./list-view/list-view.module').then(m => m.ListViewPageModule)
-  },
-  {
-    path: 'side-menu', // side-menu
-    loadChildren: () => import('./side-menu/side-menu.module').then(m => m.SideMenuPageModule)
-  },
-  {
-    path: 'dashboard',
+    path: 'dashboard', // dashboard
     loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardPageModule)
   },
   {
     path: 'map',
     loadChildren: () => import('./map/map.module').then(m => m.MapModule)
+  },
+
+  // {
+  //   path: 'contact',
+  //   loadChildren: () => import('./contact/contact.module').then(m => m.ContactPageModule)
+  // },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then(m => m.RegisterPageModule)
   }
 ];
 @NgModule({
