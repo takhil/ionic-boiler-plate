@@ -10,10 +10,6 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
-  {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
   // {
   //   path: 'home', // home
   //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
@@ -27,14 +23,10 @@ const routes: Routes = [
   //   loadChildren: () => import('./list-view/list-view.module').then(m => m.ListViewPageModule)
   // },
 
-  {
-    path: 'dashboard', // dashboard
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardPageModule)
-  },
-  {
-    path: 'map',
-    loadChildren: () => import('./map/map.module').then(m => m.MapModule)
-  },
+  // {
+  //   path: 'map',
+  //   loadChildren: () => import('./map/map.module').then(m => m.MapModule)
+  // },
 
   // {
   //   path: 'contact',
@@ -43,6 +35,14 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then(m => m.RegisterPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./button/button.module').then( m => m.ButtonPageModule)
   }
 ];
 @NgModule({

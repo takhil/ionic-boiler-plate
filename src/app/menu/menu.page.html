@@ -1,12 +1,6 @@
-<ion-app>
-  <ion-router-outlet [swipeGesture]="false"></ion-router-outlet>
-</ion-app>
+ <ion-split-pane contentId="content" when="md">
 
-<!-- The other way to implement the side menu is from App component-->
-   <!-- <ion-app>
-    <ion-split-pane contentId="main-content" when="md">
-
-        <ion-menu contentId="main-content" type="overlay">
+        <ion-menu contentId="content" type="overlay">
                <ion-header>  
          <ion-toolbar color="danger">  
            <ion-title>Side Menu</ion-title>  
@@ -34,6 +28,8 @@
             </ion-toolbar>
       </ion-footer>
         </ion-menu>
-        <ion-router-outlet id="main-content" animated="false"></ion-router-outlet>
+        <ion-router-outlet id="content" main></ion-router-outlet>
     </ion-split-pane>
-</ion-app> -->
+
+
+
